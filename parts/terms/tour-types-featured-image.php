@@ -2,7 +2,7 @@
 /*
 Title: Tour Types Featured Image
 Description: Add a featured image to your tour Category. How cool is that?
-Taxonomy: category
+Taxonomy: tour_type
 Capability: manage_options
 Locked: true
 Collapse: true
