@@ -24,30 +24,24 @@ function custom_post_type($post_types)
         ,'rewrite' => array(
             'slug' => 'tour'
         )
-        ,'show_in_rest'       => true
-        ,'rest_base'          => 'tours'
-        ,'rest_controller_class' => 'WP_REST_Posts_Controller'
         ,'supports' => array(
             'title'
             ,'excerpt'
             ,'thumbnail'
-        );
+        )
+    );
         
     $post_types['gallery'] = array(
         'labels' => piklist('post_type_labels', 'Galleries')
         ,'title' => __('Enter a new Gallery Title')
         ,'public' => true
-        ,'rewrite' => array(
-            'slug' => 'gallery'
-        )
-        ,'show_in_rest'       => true
-        ,'rest_base'          => 'tours'
-        ,'rest_controller_class' => 'WP_REST_Posts_Controller'
+        ,'rewrite' => array('slug' => 'gallery')
         ,'supports' => array(
             'title'
             ,'excerpt'
             ,'thumbnail'
         )
+    
     );
     return $post_types;
 }
