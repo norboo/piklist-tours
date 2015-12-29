@@ -31,7 +31,7 @@ function custom_post_type($post_types)
             'title'
             ,'excerpt'
             ,'thumbnail'
-        )
+        );
         
     $post_types['gallery'] = array(
         'labels' => piklist('post_type_labels', 'Galleries')
