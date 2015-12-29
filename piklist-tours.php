@@ -60,7 +60,7 @@ add_filter('piklist_taxonomies', 'custom_taxonomies');
       'post_type' => 'tour'
       ,'name' => 'tour_type'
       ,'configuration' => array(
-        'hierarchical' => false
+        'hierarchical' => true
         ,'labels' => piklist('taxonomy_labels', 'Tour Types')
         ,'page_icon' => plugins_url('parts/img/piklist-page-icon-32.png')
         ,'show_ui' => true
@@ -77,7 +77,7 @@ add_filter('piklist_taxonomies', 'custom_taxonomies');
       'post_type' => 'gallery'
       ,'name' => 'gallery_category'
       ,'configuration' => array(
-        'hierarchical' => false
+        'hierarchical' => true
         ,'labels' => piklist('taxonomy_labels', 'Gallery Categories')
         ,'page_icon' => plugins_url('parts/img/piklist-page-icon-32.png')
         ,'show_ui' => true
