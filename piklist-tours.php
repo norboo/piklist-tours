@@ -50,6 +50,19 @@ function custom_post_type($post_types)
             ,'thumbnail'
         )
     );
+    $post_types['profile'] = array(
+        'labels' => piklist('post_type_labels', 'Profiles')
+        ,'title' => __('Enter a new Profile')
+        ,'public' => true
+        ,'rewrite' => array(
+            'slug' => 'profile'
+        )
+        ,'supports' => array(
+            'title'
+            ,'excerpt'
+            ,'thumbnail'
+        )
+    );
     return $post_types;
 }
 
@@ -92,3 +105,26 @@ add_filter('piklist_taxonomies', 'custom_taxonomies');
     
     return $taxonomies;
   }
+
+add_filter('piklist_field_templates', 'my_custom_field_template');
+function my_custom_field_template($templates)
+{
+    $templates['full-width'] = array(
+        'name' => __('Post Meta Custom', 'piklist')
+        ,'description' => __('My template for Post Meta', 'piklist')
+        ,'template' => '[field_wrapper]
+                         <div class="%2$s my-custom-css-class" id="%1$s">
+                          <div class="piklist-full-width" style="padding:10px;background-color:#f2f2f2;margin-top:10px;border-bottom:2px solid #ccc;">
+                            <div style="padding-bottom:10px;">
+                            [field_label]
+                            [field_description_wrapper]
+                              <span class="piklist-field-description">[field_description]</span>
+                            [/field_description_wrapper]
+                            </div>
+                          <div>[field]</div>
+                         </div>
+                        </div>
+                      [/field_wrapper]'
+    );
+    return $templates;
+}
