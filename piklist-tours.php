@@ -3,7 +3,7 @@
 Plugin Name: Piklist Tours
 Plugin URI: http://eruisw.com
 Description: Create Tours
-Version: 1.4.0
+Version: 1.4.1
 Author: Paul Istrate
 Author URI: http://eruisw.com
 Plugin Type: Piklist
