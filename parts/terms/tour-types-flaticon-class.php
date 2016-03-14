@@ -18,7 +18,8 @@ piklist('field', array(
       'class' => 'text'
     )
     ,'choices' => array(
-        'lotus'         => 'Cultural Tours'
+        '-- choose an icon class --'              =>  ''
+        ,'lotus'         => 'Cultural Tours'
         ,'motorbike'    => 'Motorbike Tours'
         ,'walk'         => 'Trekking'
         ,'camera'       =>  'Photo Tours'
