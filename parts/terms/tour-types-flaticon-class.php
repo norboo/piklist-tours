@@ -19,10 +19,11 @@ piklist('field', array(
     )
     ,'choices' => array(
         '-- choose an icon class --'              =>  ''
-        ,'lotus'         => 'Cultural Tours'
+        ,'cultural'         => 'Cultural Tours'
         ,'motorbike'    => 'Motorbike Tours'
-        ,'walk'         => 'Trekking'
-        ,'camera'       =>  'Photo Tours'
+        ,'trekking'         => 'Trekking'
+        ,'photography'       =>  'Photo Tours'
         ,'group'        =>  'Group Tours'
+        ,'wildlife'     => 'Wildlife'
     )
   ));
