@@ -3,7 +3,7 @@
 Plugin Name: Piklist Tours
 Plugin URI: http://eruisw.com
 Description: Create Tours
-Version: 1.4.2
+Version: 1.4.3
 Author: Paul Istrate
 Author URI: http://eruisw.com
 Plugin Type: Piklist
@@ -114,7 +114,7 @@ function my_custom_field_template($templates)
         ,'description' => __('My template for Post Meta', 'piklist')
         ,'template' => '[field_wrapper]
                          <div class="%2$s my-custom-css-class" id="%1$s">
-                          <div class="piklist-full-width" style="padding:10px;background-color:#f2f2f2;margin-top:10px;border-bottom:2px solid #ccc;">
+                          <div class="piklist-full-width" style="padding:10px;background-color:#f2f2f2;margin-top:10px;border-bottom:2px solid #ccc;overflow:hidden;">
                             <div style="padding-bottom:10px;">
                             [field_label]
                             [field_description_wrapper]
